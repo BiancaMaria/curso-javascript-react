@@ -4,12 +4,13 @@ import "./styles/elements/base.css";
 import BoardGame from "./objects/BoardGame";
 import PlayerName from "./src/components/PlayerName";
 
-const $root = document.querySelector('#root');
-const $htmlPlayerName = PlayerName();
-const $htmlBoardGame = BoardGame(6); 
+const $root = document.querySelector("#root");
 
-$root.insertAdjacentHTML('beforebegin', $htmlPlayerName)
-$root.insertAdjacentHTML('beforeend',$htmlBoardGame);
-
-
-
+$root.insertAdjacentHTML(
+  "beforeend",
+  `
+  ${PlayerName("Player 1")} 
+  ${PlayerName("Player 2")} 
+  ${BoardGame(6)}
+`
+);
