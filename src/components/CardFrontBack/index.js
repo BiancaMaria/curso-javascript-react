@@ -2,7 +2,7 @@ import CardGame from "../CardGame";
 
 function CardFrontBack(){
   return /*html*/`
-    <article>
+    <article class="card-front-back">
       ${CardGame()}
       ${CardGame()}
     </article>`;
