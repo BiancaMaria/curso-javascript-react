@@ -4,7 +4,8 @@ function CardFrontBack(){
   return /*html*/`
     <article class="card-front-back">
       ${CardGame()}
-      ${CardGame()}
+      ${CardGame("javascript","Logo do javascript")}
+      ${CardGame("html","Logo do html")}
     </article>`;
 }
 
